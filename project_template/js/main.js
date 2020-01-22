@@ -18,6 +18,6 @@ let teacher2 = {
 console.log(teacher1);
 console.log(teacher2);
 
-function showAlert(){
+function showAlert() {
   alert('Open your Developer Console!');
 }

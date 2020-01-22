@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Get started with HTML, CSS and JavaScript">
   <meta name="author" content="Rasmus Cederdorff">
-  <title>eaaa.cederdorff.com</title>
+  <title>mdu-f19front</title>
   <style>
     * {
       line-height: 1.2;
@@ -54,7 +54,7 @@
 
 <body>
   <header>
-    <h1 id="title">eaaa.cederdorff.com</h1>
+    <h1 id="title">mdu-f19front</h1>
   </header>
   <h3>Projects</h3>
   <?php
@@ -62,16 +62,16 @@
   $fileList = glob('*');
   //Loop through the array that glob returned.
   foreach($fileList as $filename){
-    if($filename !== "index.php"){
+    if($filename !== "index.php" && $filename !== "README.md"){
       echo '<p><a href='. $filename .'>'. $filename, '</a></p>';
     }
   }
   ?>
-<script>
+<!-- <script>
   let path = window.location.pathname;
   title.innerHTML = path;
   document.title = path;
-</script>
+</script> -->
 </body>
 
 </html>
